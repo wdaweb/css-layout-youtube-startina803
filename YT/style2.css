@@ -1,0 +1,192 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: "Noto Sans", sans-serif;
+    padding-bottom: 300px;
+    padding-top: 100px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+}
+
+#header .logo {
+    height: 100%;
+    /* 確保 .logo 高度與 #header 一致 */
+    float: left;
+}
+
+#header .logo img {
+    height: 40%;
+    width: auto;
+    padding: 15px;
+}
+
+#header .logo i {
+    font-size: 20px;
+    width: auto;
+    padding: 15px 15px 15px 30px;
+    vertical-align: top;
+}
+
+#header .search-bar {
+    display: flex;
+    width: 500px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    line-height: 100%;
+}
+
+#header .search-bar input {
+    width: 500px;
+    height: 30px;
+    font-size: 16px;
+    border-radius: 1rem 0 0 1rem;
+    border: 1px solid #c0b8b8;
+}
+
+#header .search-bar button {
+    width: 40px;
+    border-radius: 0 1rem 1rem 0;
+    border: 1px solid #c0b8b8;
+}
+
+.login{
+    position: absolute;
+    right: 10px;
+    margin: 10px;
+}
+
+#header .login button {
+    height: 40px;
+    width: 60px;
+    border-radius: 5px;
+    border: 1px solid #24b1f1;
+    background-color: #fff;
+}
+
+#header .login button:hover {
+    border: 1px solid #24b1f1;
+    background-color: #24b1f1;
+    color: #fff;
+}
+
+
+
+.right .menu {
+    width: 100%;
+    /* 處理幽靈空白，因為li轉型inline-block，會產生幽靈空白 */
+    display: inline-block;
+    font-size: 0;
+    /* 會使元素的位置相對於其最近的已定位祖先元素 */
+    position: absolute;
+    top: 60px;
+    margin-bottom: 20px;
+}
+
+.right .menu li {
+    display: inline-block;
+    margin: 10px;
+    font-size: 1rem;
+
+}
+
+.link {
+    background-color: rgba(215, 228, 240, 0.918);
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    color: black;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.link:hover {
+    background-color: black;
+    color: #fff;
+}
+
+#sidebar {
+    width: 11%;
+    height: 93%;
+    /* 固定定位 */
+    position: fixed;
+    /* 從頁面頂部20px開始 */
+    top: 60px;
+    /* left: 20px; */
+    /* 如果內容超出，則顯示垂直滾動條 */
+    overflow-y: auto;
+}
+
+#sidebar ul {
+    list-style: none;
+    font-size: 1.1rem;
+}
+
+#sidebar li:hover {
+    background-color: rgb(224, 236, 246);
+    border-radius: 0.5rem;
+
+}
+
+#sidebar h4 {
+    padding: 10px;
+    margin-left: 20px;
+}
+
+#sidebar li {
+    height: 25px;
+    line-height: 25px;
+    padding: 10px;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+#sidebar i {
+    margin-right: 10px;
+    color: black;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.copyright {
+    margin-bottom: 10px;
+    margin-left: 30px;
+    font-size: 14px;
+    color: #5b5858;
+}
+
+.right {
+    width: 88%;
+    float: right;
+    margin-top: 30px;
+    overflow-x: hidden;
+    /* background-color: aqua; */
+}
+
+.video-item {
+    float: left;
+    padding: 20px;
+}
+
+.video-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* 圓角，模仿 YouTube 風格 */
+}
